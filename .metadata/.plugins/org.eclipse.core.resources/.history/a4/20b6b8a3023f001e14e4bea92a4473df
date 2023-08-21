@@ -1,0 +1,22 @@
+package com.nt.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.nt.module.User;
+
+import lombok.Getter;
+import lombok.Setter;
+@Service
+
+public class UserService {
+	private List<User> user= new ArrayList<>();
+	
+	
+	public UserService() {
+		user.add(new User("rakesh","rakesh123","rakehs123@gamil.com"));
+	}
+
+}
